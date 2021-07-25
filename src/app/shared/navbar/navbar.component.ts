@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
+import { Admin } from 'src/app/Shared-Api/models/admin';
+import { AdminService } from 'src/app/Shared-Api/service/admin.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,8 +12,10 @@ import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
 export class NavbarComponent implements OnInit {
   public iconOnlyToggled = false;
   public sidebarToggled = false;
+  admins: Admin;
   
-  constructor(config: NgbDropdownConfig) {
+  constructor(config: NgbDropdownConfig, private authenticationService:AdminService) {
+    // this.authenticationService.admins.subscribe(x => this.admins = x)
     config.placement = 'bottom-right';
   }
 
@@ -43,9 +47,8 @@ export class NavbarComponent implements OnInit {
     }
   }
 
-  // toggle right sidebar
-  // toggleRightSidebar() {
-  //   document.querySelector('#right-sidebar').classList.toggle('open');
-  // }
+  logout() {
+    this.authenticationService.logout();
+  }
 
 }

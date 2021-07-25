@@ -1,0 +1,80 @@
+<div class="col-12 grid-margin">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Add Product Subscription</h4>
+        <form [formGroup]="subscriptionForm" (ngSubmit)="subscriptionCreate()" class="form-sample">
+          <p class="card-description">
+            Info Data Product Subscription
+          </p>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Product Name</label>
+                <div class="col-sm-9">
+                  <input 
+                  type="text" 
+                  id="productName"
+                  name="productName"
+                  class="form-control" 
+                  placeholder="Product Name"
+                  formControlName="productName"
+                  required />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Product Tag</label>
+                <div class="col-sm-9">
+                  <input 
+                  type="text" 
+                  id="productTag"
+                  name="productTag"
+                  class="form-control" 
+                  placeholder="Product Tag"
+                  formControlName="productTag"
+                  required />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Eligible User</label>
+                <div class="col-sm-9">
+                    <input 
+                    type="text" 
+                    id="eligibleUser"
+                    name="eligibleUser"
+                    class="form-control" 
+                    placeholder="Eligible User"
+                    formControlName="eligibleUser"
+                    required />
+                   
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">Product Status</label>
+                  <div class="col-sm-9">
+                      <input 
+                      type="text" 
+                      id="productStatus"
+                      name="productStatus"
+                      class="form-control" 
+                      formControlName="productStatus"
+                      placeholder="Product Status"
+                      required/>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <button class="btn btn-primary">Save</button>
+            <button class="btn btn-dark">Cancel</button>
+        </form>
+      </div>
+    </div>
+  </div>

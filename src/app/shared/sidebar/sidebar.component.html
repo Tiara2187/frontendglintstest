@@ -19,27 +19,21 @@
         <i class="mdi mdi-home menu-icon"></i>
       </a>
     </li>
-
-    <li class="nav-item" [ngClass]="{ 'active': mobil.isActive }">
-      <a class="nav-link" routerLink="mobil/list-mobil" routerLinkActive #mobil="routerLinkActive">
-        <span class="menu-title">Mobil</span>
+    <li class="nav-item" [ngClass]="{ 'active': user.isActive }">
+      <a class="nav-link" routerLink="user/list-user" routerLinkActive #user="routerLinkActive">
+        <span class="menu-title">User</span>
         <i class="mdi mdi-folder-account menu-icon"></i>
       </a>
     </li>
 
-    <li class="nav-item" [ngClass]="{ 'active': perusahaan.isActive }">
-      <a class="nav-link" routerLink="perusahaan/list-perusahaan" routerLinkActive #perusahaan="routerLinkActive">
-        <span class="menu-title">Perusahaan</span>
+    <li class="nav-item" [ngClass]="{ 'active': subscription.isActive }">
+      <a class="nav-link" routerLink="subscription/list-subscription" routerLinkActive #subscription="routerLinkActive">
+        <span class="menu-title">Product Subscription</span>
         <i class="mdi mdi-folder-account menu-icon"></i>
       </a>
     </li>
 
-    <li class="nav-item" [ngClass]="{ 'active': karyawan.isActive }">
-      <a class="nav-link" routerLink="karyawan/list-karyawan" routerLinkActive #karyawan="routerLinkActive">
-        <span class="menu-title">Karyawan</span>
-        <i class="mdi mdi-folder-account menu-icon"></i>
-      </a>
-    </li>
+
 
   </ul>
 </nav>

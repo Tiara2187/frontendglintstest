@@ -4,7 +4,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/user-pages/register', pathMatch: 'full' },
+  { path: '', redirectTo: '/user-pages/login', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'basic-ui', loadChildren: () => import('./basic-ui/basic-ui.module').then(m => m.BasicUiModule) },
   { path: 'charts', loadChildren: () => import('./charts/charts.module').then(m => m.ChartsDemoModule) },
@@ -15,9 +15,9 @@ const routes: Routes = [
   { path: 'apps', loadChildren: () => import('./apps/apps.module').then(m => m.AppsModule) },
   { path: 'user-pages', loadChildren: () => import('./user-pages/user-pages.module').then(m => m.UserPagesModule) },
   { path: 'error-pages', loadChildren: () => import('./error-pages/error-pages.module').then(m => m.ErrorPagesModule) },
-  { path: 'mobil', loadChildren: () => import('./mobil/mobil.module').then(m => m.MobilModule) },
-  { path: 'perusahaan', loadChildren: () => import('./perusahaan/perusahaan.module').then(m => m.PerusahaanModule)},
-  { path: 'karyawan', loadChildren: () => import('./karyawan/karyawan.module').then(m => m.KaryawanModule)}
+  { path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule)},
+  { path: 'subscription', loadChildren: () => import('./subscription/subscription.module').then(m => m.SubscriptionModule)}
+ 
 ];
 
 @NgModule({
