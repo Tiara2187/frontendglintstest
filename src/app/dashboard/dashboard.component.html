@@ -19,10 +19,10 @@
     <div class="card bg-gradient-danger card-img-holder text-white">
       <div class="card-body">
         <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image"/>
-        <h4 class="font-weight-normal mb-3">Jumlah Karyawan
+        <h4 class="font-weight-normal mb-3">Jumlah User
           <i class="mdi mdi-chart-line mdi-24px float-right"></i>
         </h4>
-        <h2 class="mb-5">10</h2>
+        <h2 class="mb-5">0</h2>
         
       </div>
     </div>
@@ -31,10 +31,10 @@
     <div class="card bg-gradient-info card-img-holder text-white">
       <div class="card-body">
         <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image"/>                  
-        <h4 class="font-weight-normal mb-3">Jumlah Mobil
+        <h4 class="font-weight-normal mb-3">Jumlah Product Subscription
           <i class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
         </h4>
-        <h2 class="mb-5">10</h2>
+        <h2 class="mb-5">0</h2>
       </div>
     </div>
   </div>
@@ -42,135 +42,13 @@
     <div class="card bg-gradient-success card-img-holder text-white">
       <div class="card-body">
         <img src="assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image"/>                                    
-        <h4 class="font-weight-normal mb-3">Jumlah Perusahaan
+        <h4 class="font-weight-normal mb-3">Status Delivery
           <i class="mdi mdi-diamond mdi-24px float-right"></i>
         </h4>
-        <h2 class="mb-5">3</h2>
+        <h2 class="mb-5">0</h2>
       </div>
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-lg-7 grid-margin stretch-card">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Jumlah Karyawan Laki-laki & Perempuan </h4>
-        <canvas baseChart [chartType]="'doughnut'" [datasets]="trafficChartData" [labels]="trafficChartLabels" [options]="trafficChartOptions" [colors]="trafficChartColors"></canvas>
-        <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4">
-          <ul>
-            <li>
-              <span class="legend-dots"></span>Laki-laki
-              <span class="float-right">70%</span>
-            </li>
-            <li>
-              <span class="legend-dots"></span>Perempuan
-              <span class="float-right">30%</span>
-            </li>
-            
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div> 
-  <div class="col-lg-5 grid-margin stretch-card">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Jumlah Mobil Karyawan</h4>
-        <canvas baseChart [chartType]="'doughnut'" [datasets]="trafficChartData" [labels]="trafficChartLabels" [options]="trafficChartOptions" [colors]="trafficChartColors"></canvas>
-        <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4">
-          <ul>
-            <li>
-              <span class="legend-dots"></span>Search Engines
-              <span class="float-right">30%</span>
-            </li>
-            <li>
-              <span class="legend-dots"></span>Direct Click
-              <span class="float-right">30%</span>
-            </li>
-            <li>
-              <span class="legend-dots"></span>Bookmarks Click
-              <span class="float-right">40%</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>  
-</div>
 
-<div class="row">
-  <div class="col-lg-4 grid-margin stretch-card">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title"> Total Aset Karyawan</h4>
-        <canvas baseChart [chartType]="'doughnut'" [datasets]="trafficChartData" [labels]="trafficChartLabels" [options]="trafficChartOptions" [colors]="trafficChartColors"></canvas>
-        <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4">
-          <ul>
-            <li>
-              <span class="legend-dots"></span>Search Engines
-              <span class="float-right">30%</span>
-            </li>
-            <li>
-              <span class="legend-dots"></span>Direct Click
-              <span class="float-right">30%</span>
-            </li>
-            <li>
-              <span class="legend-dots"></span>Bookmarks Click
-              <span class="float-right">40%</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div> 
-  <div class="col-lg-4 grid-margin stretch-card">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Jumlah Karyawan Perusahaan</h4>
-        <canvas baseChart [chartType]="'doughnut'" [datasets]="trafficChartData" [labels]="trafficChartLabels" [options]="trafficChartOptions" [colors]="trafficChartColors"></canvas>
-        <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4">
-          <ul>
-            <li>
-              <span class="legend-dots"></span>Search Engines
-              <span class="float-right">30%</span>
-            </li>
-            <li>
-              <span class="legend-dots"></span>Direct Click
-              <span class="float-right">30%</span>
-            </li>
-            <li>
-              <span class="legend-dots"></span>Bookmarks Click
-              <span class="float-right">40%</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>  
-
-  <div class="col-lg-4 grid-margin stretch-card">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Merk Mobil</h4>
-        <canvas baseChart [chartType]="'doughnut'" [datasets]="trafficChartData" [labels]="trafficChartLabels" [options]="trafficChartOptions" [colors]="trafficChartColors"></canvas>
-        <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4">
-          <ul>
-            <li>
-              <span class="legend-dots"></span>Search Engines
-              <span class="float-right">30%</span>
-            </li>
-            <li>
-              <span class="legend-dots"></span>Direct Click
-              <span class="float-right">30%</span>
-            </li>
-            <li>
-              <span class="legend-dots"></span>Bookmarks Click
-              <span class="float-right">40%</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div> 
-</div>
 
